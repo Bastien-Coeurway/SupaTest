@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { supaInsert } from '../functions/supaInsert';
 import styles from '../styles/Home.module.css';
+import UserList from '../components/userList';
 
 export default function SubmitMenu() {
 
@@ -24,6 +25,7 @@ export default function SubmitMenu() {
         setEmail('')
         setMessage('')
         document.getElementById("myForm").reset();
+        window.location.reload();
         })
     }
 
